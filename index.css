@@ -696,6 +696,6 @@ font-size: 10px;
     }
     @media only screen and (max-width: 600px) {
     .modalImage_1 {
-    width: ;
+    width:auto ;
     }
     }
