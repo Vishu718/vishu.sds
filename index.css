@@ -699,3 +699,8 @@ font-size: 10px;
     width:auto ;
     }
     }
+@media only screen and (max-width: 400px) {
+    .modalImage_1 {
+    width:auto ;
+    }
+    }
