@@ -694,12 +694,12 @@ font-size: 10px;
     color: rgb(255, 0, 0);
     cursor: pointer;
     }
-    @media only screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
     .modalImage_1 {
     width:auto ;
     }
     }
-@media only screen and (max-width: 400px) {
+    @media screen and (max-width: 400px) {
     .modalImage_1 {
     width:auto ;
     }
