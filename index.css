@@ -701,9 +701,7 @@ font-size: 10px;
     }
     @media screen and (max-width: 400px) {
     .modalImage_1 {
-        max-width: 350px;
+        max-width: 300px;
         }
-        .close_1{
-            right: ;
-        }
+        
     }
