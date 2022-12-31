@@ -745,6 +745,6 @@ font-size: 10px;
 
 @media screen and (max-width: 767px){
     .click{
-        margin-left: 6em;
+        margin-left: 10em;
     }
 }
