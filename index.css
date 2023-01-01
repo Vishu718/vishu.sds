@@ -742,7 +742,7 @@ font-size: 10px;
             right: 25px;
         }
         }
- @media screen and (max-width: 360px) {
+ @media screen and (max-width: 2340px) {
      img_div{
                 margin-left: 5em;
             }
