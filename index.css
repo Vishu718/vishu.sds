@@ -743,7 +743,7 @@ font-size: 10px;
         }
         }
  @media screen and (max-width: 1440px) {
-     img_div{
+     .img_div{
                 margin-left: 7em;
             }
         }
