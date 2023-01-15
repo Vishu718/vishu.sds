@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Works</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  $(document).ready(function () {
+       // will first fade out the loading animation 
+       $("#loaderanimate").delay(3500).fadeOut("slow", function () {
+           // will fade out the whole DIV that covers the website.
+           $("#loader").fadeOut("slow");
+       });
+   });
+</script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+margin: 0;
+padding: 0;
+}
+html{
+scroll-behavior: smooth;
+}
+.nav_main{
+height: 80px;
+box-shadow: 5px 5px 5px rgba(.3,.5,.8, 0.4);
+margin-bottom: 10px;
+background-color: #ecf4ff;
+}
+.nav1{
+    font-size: larger;
+    margin-top: 25px;
+}
+.header_sub2{
+width: 5%;
+height: 100%;
+float: left;
+margin-left: 50px;
+    
+}
+#button {
+display: inline-block;
+background-color: #151823;
+width: 50px;
+height: 50px;
+text-align: center;
+border-radius: 4px;
+position: fixed;
+bottom: 30px;
+right: 30px;
+transition: background-color .3s, 
+opacity .5s, visibility .5s;
+opacity: 0;
+visibility: hidden;
+z-index: 1000;
+}
+#button::after {
+content: "\f077";
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+font-size: 2em;
+line-height: 50px;
+color: #fff;
+}
+#button:hover {
+cursor: pointer;
+background-image:linear-gradient(270deg,#2c215d,#9b4b90);
+}
+#button:active {
+background-color:#2c215d;
+}
+#button.show {
+opacity: 1;
+visibility: visible;
+}
+.overlay {
+height: 100%;
+width:0% ;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition: 0.5s;
+
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+.click{
+text-decoration: none;
+margin-left: 28em;
+}
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+}
+.open{
+float: right;
+margin: 20px 50px 0 0;
+}
+
+.nav2{
+display: none;
+}
+.head_main1{
+margin-top: 100px;
+}
+.link{
+margin-left: 6em; 
+
+}
+.link li{
+  list-style: none;
+}
+.stay_h{
+    font-family: Cinzel Decorative;
+    border-left: 3px solid chocolate;
+}
+.be{
+margin-left: 2em;
+border-left: 3px solid chocolate;
+font-family: Cinzel Decorative;
+}
+@media screen and ( max-width:767px){
+.nav1{
+display: none;
+}
+
+.nav2{
+display: inline-block;
+}
+.click{
+margin-left: 22em;
+}
+
+.link{
+margin-left: 1em;
+display: inline;
+}
+.link li{
+list-style: none;
+display: inline;
+margin: 10px;
+margin-left: 1em;
+}
+.be{
+margin-left: 0;
+margin-bottom: 1em;
+text-align: center;
+border: none;
+}
+.stay_h{
+    text-align: center;
+    border: none;
+}
+.stay_ul{
+    text-align: center;
+}
+}
+@media screen and ( max-width:480px){
+.nav1{
+display: none;
+}
+
+.nav2{
+display: inline-block;
+}
+.click{
+margin-left: 12em;
+}
+
+.link li{
+    list-style: none;
+    display: inline;
+    margin: -2px;
+    
+}
+.be{
+margin-left: 0;
+margin-bottom: 1em;
+text-align: center;
+border: none;
+}
+.stay_h{
+    text-align: center;
+    border: none;
+}
+.stay_ul{
+    text-align: center;
+}
+}
+.nav1 span{
+color: #000;
+}
+.nav1 span:hover{
+color: blue;
+
+}
+/* Slideshow container */
+.slideshow-container {
+position: relative;
+background: white;
+}
+
+/* Slides */
+.mySlides {
+display: none;
+padding: 80px;
+text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -30px;
+padding: 16px;
+color: #888;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+position: absolute;
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+text-align: center;
+padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.icon-bar {
+position: fixed;
+top: 65%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateX(-20%);
+}
+
+.icon-bar a {
+display: block;
+text-align: center;
+border-radius: 50px;
+padding: 10px;
+transition: all 0.3s ease;
+color: white;
+font-size: 15px;
+margin-bottom: 5px;
+}
+
+.icon-bar a:hover {
+background-color: #000;
+}
+
+.facebook {
+background: #3B5998;
+color: white;
+}
+
+.twitter {
+background: #55ACEE;
+color: white;
+}
+
+.instagram {
+background: #dd4b39;
+color: white;
+}
+.github{
+background-color: #000;
+}
+
+/*.linkedin {
+background: #007bb5;
+color: white;
+}*/
+
+/*.youtube {
+background: #bb0000;
+color: white;
+}*/
+.sci{
+  margin-left: 6.5em;
+}
+@media screen and (max-width:767px) {
+
+.icon-bar a{
+font-size: 10px;
+}
+.sci{
+  margin-left: 3em;
+}
+}
+@media screen and (max-width:480px) {
+
+.icon-bar a{
+font-size: 10px;
+}
+.sci{
+  margin-left: 3em;
+}
+}
+#loader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-color:white;
+            z-index: 9999999;
+          }
+          .no-js #loaderanimate, .oldie #loaderanimate {
+             display: none;
+          }
+          #loaderanimate {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            /*margin-left: -90px;
+            margin-top: -150px;
+            padding: 0;*/
+          }
+
+          .loading{
+                position: absolute;
+                /*top: 50%;
+                left: 50%;*/
+                overflow: hidden;
+                transform: translate(-50%,50%);
+                font-weight: 800;
+                font-family: Cinzel Decorative;
+            }
+            .loading::before{
+                color: #aaa;
+                content: attr(data-loading-text);
+            }
+            .loading::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                opacity: 1;
+                color: #444;
+                overflow: hidden;
+                content: attr(data-loading-text);
+                animation: loading 4s infinite;
+            }
+            @keyframes loading{
+                0%{
+                    width: 0;
+                }
+                100%{
+                    width: 100%;
+                }
+            }
+
+            .work h1:after {
+              content: '';
+              display: block;
+              width: 35px;
+              height: 6px;
+              background: #d4393b;
+              border-radius: 3px;
+              margin: 4px auto 0;
+ }
+       
+</style>
+</head>
+<body style="background-color: #ecf4ff;">
+  <div class="container-fluid">
+    <div id="loader">
+      <div id="loaderanimate">
+        <div class="loading" data-loading-text="Vishal.Agrahari"></div>
+      </div>
+  </div>
+  </div>
+<a id="button"></a>
+<header class="container-fluid">
+<div class="row nav_main">
+    <div class="col-md"></div>
+    <div class="col-lg-6 nav1">
+            <a href="index.html" style="text-decoration: none;">
+            <span class=" m-5">
+            Home
+            </span></a>
+            <a href="index.html" style="text-decoration: none;">
+            <span class=" m-5">
+            About
+            </span></a>
+            <a href="index.html" style="text-decoration: none;">
+            <span class="m-5">
+            Services
+            </span></a>
+            <a href="#contact" style="text-decoration: none;">
+            <span class="m-5">
+            Contact
+            </span></a>
+    </div>
+    <div  class="col-lg-6 nav2" >
+        <div class="header_sub2">
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="index.html">About</a>
+                <a href="index.html">Services</a>
+                <a href="#contact">Contact</a>
+                </div>
+            </div>
+        
+            <span style="font-size:25px;cursor:pointer" class="open" onclick="openNav()">&#9776; </span>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<div class="container mt-5" style="background-color: white; border-radius: 5px;font-family:montserrat;">
+    <div class="row work" title="These are Personal Projects">
+      <h1 class="text-center mt-3" style=" font-family: Cinzel Decorative;"><b>My Works</b></h1>
+      <div class="col-md-6 mt-3">
+        <div data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Sprite Game👾</h4></li></ul>
+          <div style="background-image: url('4.png'); border-radius: 5px;" title="Cursor Magic">
+            <p class="p-3">Sprite Game. Developed by JavaScript.(For Desktop)</p>
+            <a target="_blank" href="https://vishu718.github.io/Sprite_Game/" class="click">Click here</a>
+          </div>
+          </div>
+        <div data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>Cursor Magic🪄</h4></li></ul>
+        <div style="background-image: url('4.png'); border-radius: 5px;">
+          <p class="p-3">This is a Cursor Moving Effect. When you move cursor there will a effect created. It designed by using HTML, CSS & JavaScript.(For Desktop)</p>
+          <a target="_blank" href="https://vishu718.github.io/cursor_magic/" class="click">Click here</a>
+        </div>
+        </div>
+        <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Chat Bot🗣️</h4></li></ul>
+          <div style="background-image:url('4.png'); border-radius: 5px;">
+            <p class="p-3">This is a Chat Bot. In it when you ask questions & press 'ENTER', it will give the Answer of questions. It designed by using HTML, CSS, & JavaScript.(Condition Apply)(Open in Desktop)</p>
+            <a target="_blank" href="https://vishu718.github.io/chatbot/" class="click">Click here</a>
+          </div>
+        </div>
+        <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Coffee-Cafe🍵</h4></li></ul>
+          <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="For Max. Width 1500px">
+            <p class="p-3">It's a one Page Coffee-Cafe Design. It designed by using HTML, CSS, JavaScript & Jquery. (Not a Responsive Design)(Open in Laptop)</p>
+            <a target="_blank" href="https://vishu718.github.io/Coffee-Cafe/" class="click">Click here</a>
+          </div>
+        </div>
+        <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Birthday Wishing🎂❤️</h4></li></ul>
+          <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="Happy Birthday">
+            <p class="p-3">Birthday Wish using JavaScript.(Responsive Design)</p>
+            <a target="_blank" href="https://vishu718.github.io/birthday/" class="click">Click here</a>
+          </div>
+        </div>
+        <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Gear Loading🔃</h4></li></ul>
+          <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="Gear_Loading">
+            <p class="p-3">Gear Loading Page.It designed by Using HTML & CSS.(Responsive Design)</p>
+            <a target="_blank" href="https://vishu718.github.io/Gear_Loading/" class="click">Click here</a>
+          </div>
+        </div>
+        <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Pop-Up</h4></li></ul>
+          <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="Pop-Up">
+            <p class="p-3">Pop-Up. It designed by using HTML, CSS & JavaScript. (Responsive Design)</p>
+            <a target="_blank" href="https://vishu718.github.io/Pop-Up_Button/" class="click">Click here</a>
+          </div>
+        </div>
+        <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Flip_Pre-loading</h4></li></ul>
+          <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="Flip_Pre-loading">
+            <p class="p-3">Flip Pre-loading. It designedby using CSS.(Responsive Design)</p>
+            <a target="_blank" href="https://vishu718.github.io/Flip_Pre-loading/" class="click">Click here</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-6 mt-3">
+        <div data-aos="fade-in-down" data-aos-duration="1500">
+          <ul><li><h4>Image Slider🎚️</h4></li></ul>
+          <div style="background-image: url('4.png'); border-radius: 5px;">
+            <p class="p-3">This is a Auto Image Slider. It designed by using HTML, CSS & JavaScript.(Responsive Design)</p>
+            <a target="_blank" href="https://vishu718.github.io/Image_Slider/" class="click">Click here</a>
+          </div>
+      </div>
+      <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>Back To Top🔝</h4></li></ul>
+        <div style="background-image:url('4.png'); border-radius: 5px;">
+          <p class="p-3">This is a Back To Top Button.It designed by using HTML, CSS, & JavaScript.(Responsive Design)</p>
+          <a target="_blank" href="https://vishu718.github.io/Back_To_Top/" class="click">Click here</a>
+        </div>
+      </div>
+      <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>IRCTC🚄</h4></li></ul>
+        <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;" title="For Max. Width 1500px">
+          <p class="p-3">It's a design of Indian Railway.It designed by using HTML, CSS, JavaScript & JQuery. Designed Multi Pages(Register, Other Services, Contact) & used Pop-up Form in Login.(Not a Responsive design)(Open in Laptop)</p>
+          <a target="_blank" href="https://vishu718.github.io/IRCTC/" class="click">Click here</a>
+        </div>
+      </div>
+      <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>Login👤</h4></li></ul>
+        <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="login">
+          <p class="p-3">It's a Login Form with glowing button(On Hover). It designed by using HTML & CSS. (Responsive Design)</p>
+          <a target="_blank" href="https://vishu718.github.io/Login/" class="click">Click here</a>
+        </div>
+      </div>
+      <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>String_Character_Change</h4></li></ul>
+        <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="String_Character_Change">
+          <p class="p-3">String Character Change. It designed by using JavaScript.(For eg. String:- "These are My Personal Projects.")</p>
+          <a target="_blank" href="https://vishu718.github.io/String_Character_Change/" class="click">Click here</a>
+        </div>
+      </div>
+      <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>Switch_case</h4></li></ul>
+        <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="Switch_case">
+          <p class="p-3">Switch Case. It designed by using JavaScript.</p>
+          <a target="_blank" href="https://vishu718.github.io/Switch_case/" class="click">Click here</a>
+        </div>
+      </div>
+      <div class="mt-3" data-aos="fade-in-down" data-aos-duration="1500">
+        <ul><li><h4>Birthday Special🎂❤️</h4></li></ul>
+        <div style="background-image:url('4.png'); border-radius: 5px; margin-bottom: 5px;"title="Birthday Special">
+          <p class="p-3">Birthday Special🎂❤️. It designed by using HTML, CSS & JavaScript. (Open in Desktop)</p>
+          <a target="_blank" href="https://vishu718.github.io/Happy_Birthday/" class="click">Click here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container mt-5" style="font-family:montserrat;">
+    <div class="slideshow-container">
+  
+      <div class="mySlides">
+        <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+        <p class="author"></p>
+      </div>
+      
+      <div class="mySlides">
+        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+        <p class="author"></p>
+      </div>
+      
+      <div class="mySlides">
+        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+        <p class="author"></p>
+      </div>
+      <div class="mySlides">
+        <q>Alone we can do so little; Together we can do so much.</q>
+        <p class="author"></p>
+      </div>
+      <div class="mySlides">
+        <q>Difficult roads often lead to beautiful destinations.</q>
+        <p class="author"></p>
+      </div>
+      <div class="mySlides">
+        <q>The pain you feel today will be the strength you feel tomorrow.</q>
+        <p class="author"></p>
+      </div>
+      <div class="mySlides">
+        <q>A beautiful life begins with a beautiful mind.</q>
+        <p class="author"></p>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span> 
+      </div>
+  </div>
+
+  <footer id="contact" class="container-fluid mt-3" style="margin: 0; padding: 0; color: #fff;font-family:montserrat;">
+    <div class="row" style="background-color: #001D38;">
+      
+      <div class="col-md-4 mt-5">
+        <h2 class="mt-5 m-3 stay_h"> Stay in Touch :-</h2>
+        <ul class="mt-3 stay_ul">
+          <li class="fa fa-phone" style="padding: 10px;"> :- 8874642690</li><br>
+          <li class="fa fa-envelope" style="padding: 10px;"> :- vishalagrahari2782@gmail.com</li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center" style=" margin-top: 5em; font-family: Cinzel Decorative;">
+          <i>Let's Work Together</i>
+        </h2>
+       
+        <div class="sci">
+          <a target="_blank" href="https://www.facebook.com/vishalagrahari.vishalagrahari.3" style="color: #fff; padding: 20px;"><span class="fa fa-facebook media"></span></a>
+          <a target="_blank" href="https://www.instagram.com/vishalagrahari2001/" style="color: #fff; padding: 20px;"><span class="fa fa-instagram"></span></a>
+          <a target="_blank" href="https://twitter.com/VishalA31351380" style="color: #fff; padding: 20px;"><span class="fa fa-twitter"></span></a>
+          <a target="_blank" href="https://github.com/Vishu718" style="color: #fff; padding: 20px;"><span class="fa fa-github"></span></a>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5" style="font-family:montserrat;">
+        <h2 class="mt-5 be">Important Links :-</h2>
+        <ul class="mt-3 link">
+        <a href="index.html" style="text-decoration: none; color: #fff; padding: 5px;"><li>Home</li></a>
+        <a href="index.html" style="text-decoration: none; color: #fff; padding: 5px;"><li>About</li></a>
+        <a href="index.html" style="text-decoration: none; color: #fff; padding: 5px;"><li>Services</li></a>
+        <a href="index.html" style="text-decoration: none; color: #fff; padding: 5px;"><li>Gallery</li></a>
+        </ul>
+      </div>
+      <div class="text-center " style="margin-top:6em;" >
+        Made with ❤️ By<a target="_blank" href="https://www.instagram.com/vishalagrahari2001/" style="text-decoration: none; color: #fff;"> "VISHAL AGRAHARI"</a>
+      </div>
+    </div>
+    
+  </footer>
+
+  <div class="icon-bar" id="" data-aos="fade-right" data-aos-duration="3000">
+    <a target="_blank" href="https://www.facebook.com/vishalagrahari.vishalagrahari.3" class="facebook"><i class="fa fa-facebook"></i></a> 
+    <a target="_blank" href="https://twitter.com/VishalA31351380" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <a target="_blank" href="https://www.instagram.com/vishalagrahari2001/" class="instagram"><i class="fa fa-instagram"></i></a> 
+    <a target="_blank" href="https://github.com/Vishu718" class="github"><i class="fa fa-github"></i></a> 
+    <!--a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a--> 
+  </div>
+<script>
+var btn = $('#button');
+$(window).scroll(function() {
+if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+} else {
+    btn.removeClass('show');
+}
+});
+
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    AOS.init({once:true});
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+
+    </script>
+</body>
+</html>
